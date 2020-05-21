@@ -4,6 +4,7 @@ let consoleText = input => input
 let form = document.querySelector('#form')
 let input = document.querySelector('#input')
 let paragraph = document.querySelector('#paragraph')
+let clear = document.querySelector('#clear')
 
 form.addEventListener(
   'submit',
@@ -23,9 +24,15 @@ form.addEventListener(
 
 let saved = localStorage.getItem('items')
 
-if (saved) {
-  paragraph.innerHTML = saved
-}
+saved ? paragraph.innerHTML = saved : paragraph.innerHTML = ''
+
+clear.addEventListener(
+    'click', () => {
+        localStorage.clear()
+        paragraph.innerHTML = saved
+    },
+    false
+)
 
 // drop down menu
 

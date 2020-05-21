@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>elements</title>
 </head>
 <body>
+    <div id="formContainer">
+        <form id="form">
+            <label for="name">I am a form, enter some crap here:</label>
+            <input type="text" name="input" id="input"></input>
+            <input type="submit" value="click me, darling" id="submit"></input>
+            <button id="clear">clear me, darling</button>
+        </form>
+        <p id="paragraph"></p>
+
+    </div>
     <div id="content"></div>
-    <form id="form">
-        <label for="name">I am a form, enter some crap here:</label>
-        <input type="text" name="input" id="input"></input>
-        <input type="submit" value="click me, darling" id="submit"></input>
-    </form>
-    <p id="paragraph"></p>
 </body>
 <script src="main.js"></script>
 </html>
